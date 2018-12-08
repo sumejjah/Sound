@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/albums_context_option"
+        android:title="Ambums"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/delete_context_option"
+        android:title="Delete"
+        app:showAsAction="always" />
+
+</menu>

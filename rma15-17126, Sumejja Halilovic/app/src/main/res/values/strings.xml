@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Aplication</string>
+    <string-array name="muzicari">
+        <item>Dino Merlin</item>
+        <item>Hanka Paldum</item>
+        <item>Halid Beslic</item>
+        <item>Bijelo dugme</item>
+        <item>Nina Badric</item>
+    </string-array>
+    <string-array name="zanrovi">
+        <item>pop</item>
+        <item>sevdalinka</item>
+        <item>sevdalinka</item>
+        <item>rock</item>
+        <item>pop</item>
+    </string-array>
+    <string name="button">SHARE</string>
+    <string name="jos">MORE...</string>
+    <string name="imePjevaca">name</string>
+    <string name="zanr">genre</string>
+    <string name="biografija">biography</string>
+    <string name="web">webPage</string>
+    <string name="list_view">allMusicians</string>
+    <string name="search">SEARCH</string>
+    <string name="listView2">similar</string>
+    <string name="listView">top5songs</string>
+</resources>

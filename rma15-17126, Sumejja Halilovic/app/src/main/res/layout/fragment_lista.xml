@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ba.unsa.etf.rma.sumejja_halilovic.aplikacija.Pocetna"
+    android:background="#ffffff">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEARCH"
+        android:id="@+id/search"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_centerHorizontal="true" />
+    <FrameLayout
+        android:id="@+id/pretrage_layout"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/search"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HISTORIJA"
+        android:id="@+id/historija_btn"
+        android:layout_above="@+id/pretrage_layout"
+        android:layout_toRightOf="@+id/search"
+        android:layout_toEndOf="@+id/search"
+        android:layout_below="@+id/editText"/>
+
+</RelativeLayout>

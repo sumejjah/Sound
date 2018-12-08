@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:id="@+id/ScrollView"
+    android:background="#ffffff">
+    <RelativeLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1"
+        tools:context="ba.unsa.etf.rma.sumejja_halilovic.aplikacija.Detalji"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="imePjevaca"
+            android:id="@+id/imePjevaca"
+            android:textColor="#000000"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginTop="45dp"
+            android:layout_alignRight="@+id/biografija"
+            android:layout_alignEnd="@+id/biografija" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="zanr"
+            android:id="@+id/zanr"
+            android:textColor="#000000"
+            android:layout_below="@+id/imePjevaca"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginTop="31dp"
+            android:layout_alignRight="@+id/imePjevaca"
+            android:layout_alignEnd="@+id/imePjevaca" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="biografija"
+            android:id="@+id/biografija"
+            android:textColor="#000000"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="web"
+            android:id="@+id/web"
+            android:textColor="#000000"
+            android:layout_below="@+id/biografija"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/biografija"
+            android:layout_alignEnd="@+id/biografija" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:maxHeight="160dp"
+            android:maxWidth="160dp"
+            android:minHeight="150dp"
+            android:minWidth="150dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detalji"
+            android:id="@+id/button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="#e4d3d3" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/jos"
+            android:id="@+id/dodatni_fragment"></FrameLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JOŠ..."
+            android:id="@+id/jos"
+            android:layout_below="@+id/web"
+            android:layout_alignRight="@+id/zanr"
+            android:layout_alignEnd="@+id/zanr" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/dodatni_fragment"
+            android:id="@+id/albumi"
+            android:textColor="#000000"
+            android:text=" ALBUMI:"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:id="@+id/albumiLista"
+            android:layout_below="@+id/albumi"
+            ></ListView>
+
+    </RelativeLayout>
+
+</ScrollView>
